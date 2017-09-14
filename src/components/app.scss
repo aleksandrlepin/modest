@@ -16,7 +16,7 @@
 }
 
 .header__logo {
-    padding: 5px;
+    padding-top: 5px;
 }
 
 .menu__link {
@@ -97,12 +97,12 @@
 .about__container {
     max-width: 1140px;
     margin: auto;
-    padding-top: 50px;
+    padding-top: 45px;
 }
 
 .about__caption {
     @include q-sans-400(36);
-    margin: 0 20px;
+    margin: 0 20px 25px;
     color: $black2;
     text-transform: uppercase;
 
@@ -119,19 +119,20 @@
 }
 
 .about__content {
-    display: flex;
     @include o-sans-400(16);
+    display: flex;
     color: $grey;
     line-height: 26px;
 }
 
 .mission {
     width: 60%;
+    padding-top: 22px;
     padding-right: 30px;
 }
 
 .mission__text {
-    padding-bottom: 54px;
+    padding-bottom: 25px;
 
     span {
         font-weight: 700;
@@ -141,6 +142,7 @@
 .social {
     display: flex;
     flex-direction: row;
+    margin-top: 28px;
 }
 
 .social__link {
@@ -164,6 +166,7 @@
     display: flex;
     flex-flow: wrap row ;
     width: 40%;
+    padding: 30px 0 0 5px;
 }
 
 .goals__item {
@@ -198,12 +201,12 @@
 .work__container {
     max-width: 1140px;
     margin: auto;
-    padding-top: 50px;
+    padding-top: 43px;
 }
 
 .work__caption {
     @include q-sans-400(36);
-    margin: 0 20px 63px;
+    margin: 0 20px 55px;
     color: $white1;
     text-transform: uppercase;
 
@@ -224,6 +227,7 @@
     display: flex;
     flex-flow: wrap row;
     justify-content: space-between;
+    margin-bottom: 25px;
 }
 
 .portfolio__item {
@@ -273,7 +277,7 @@
 .work__link {
     @include q-sans-400(14);
     display: block;
-    width: 160px;
+    width: 155px;
     margin: auto;
     padding: 12px 18px;
     border: 2px solid $white1;
@@ -292,7 +296,7 @@
 
 .services {
     height: 829px;
-    padding-top: 50px;
+    padding-top: 55px;
 }
 
 .services__container {
@@ -323,6 +327,7 @@
     display: flex;
     flex-flow: wrap row;
     justify-content: space-between;
+    padding: 0 15px;
     color: $grey;
     line-height: 26px;
     text-align: center;
@@ -330,24 +335,24 @@
 
 .services__item {
     width: 21%;
-    margin-top: 93px;
+    margin-top: 85px;
 
     img {
         width: 48px;
+    }
+
+    p {
+        margin-top: 10px;
     }
 }
 
 
 .services__service-name {
     @include q-sans-400(16);
-    margin-top: 35px;
+    margin-top: 27px;
     padding-bottom: 10px;
     color: $black2;
     text-transform: uppercase;
-
-    p {
-        margin-top: 28px;
-    }
 }
 
 // FEATURES
@@ -366,7 +371,7 @@
 
 .features__caption {
     @include q-sans-400(36);
-    margin: 0 20px 63px;
+    margin: 0 20px 53px;
     color: $white1;
     text-transform: uppercase;
 
@@ -393,16 +398,16 @@
 }
 
 .features__item {
-    width: 32%;
+    width: 31.5%;
 
     p {
-        margin-top: 15px;
+        margin-top: 10px;
     }
 }
 
 .features__name {
     @include q-sans-400(16);
-    margin-top: 35px;
+    margin-top: 45px;
     padding-bottom: 10px;
     color: $white1;
     text-transform: uppercase;
@@ -412,6 +417,7 @@
 
 .footer {
     @include o-sans-400(14);
+    height: 95px;
     border-top: 1px solid $turquoise;
     background-color: $dark-slate-grey2;
     color: $white1;
@@ -422,14 +428,20 @@
     justify-content: space-between;
     max-width: 1140px;
     margin: auto;
-    padding: 42px 0;
+    padding: 40px 0;
 
+}
+
+.footer__social {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
 }
 
 .footer__social-link {
     width: 18px;
     height: 18px;
-    margin-left: 20px;
+    margin-left: 17px;
 
     img {
         width: 100%;
