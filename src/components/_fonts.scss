@@ -1,5 +1,12 @@
 @font-face {
     font-family: 'Quattrocento Sans', sans-serif;
+    src: url('fonts/QuattrocentoSans-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Quattrocento Sans', sans-serif;
     src: url('fonts/QuattrocentoSans-Bold.ttf') format('truetype');
     font-style: normal;
     font-weight: 700;
@@ -10,6 +17,13 @@
     src: url('fonts/OpenSans-Regular.ttf') format('truetype');
     font-style: normal;
     font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Open Sans', sans-serif;
+    src: url('fonts/OpenSans-SemiBold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 600;
 }
 
 @font-face {

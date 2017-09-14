@@ -1,195 +1,249 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
     <title>Modest</title>
-    <link rel="stylesheet" href="css/app.css">
+    <link rel='stylesheet' href='css/app.css'>
+    <link rel='stylesheet' href='css/reset.css'>
 </head>
 
 <body>
 
 <!-- HEADER -->
-    <header class="header">
-        <div class="header__container">
-            <div class="header__logo">
-                <img src="images/modest.png" alt="Modest logo">
+    <header class='header'>
+        <div class='header__container'>
+            <div class='header__logo'>
+                <img src='images/modest.png' alt='Modest logo'>
             </div>
-            <nav class="menu">
-                <a href="#home" class="menu__link"> home </a>
-                <a href="#about" class="menu__link"> about </a>
-                <a href="#work" class="menu__link"> work </a>
-                <a href="#team" class="menu__link"> team </a>
-                <a href="#services" class="menu__link"> services </a>
-                <a href="#features" class="menu__link"> features </a>
-                <a href="#contact" class="menu__link"> contact </a>
+            <nav class='menu'>
+                <a href='#home' class='menu__link menu__link--active'> home </a>
+                <a href='#about' class='menu__link'> about </a>
+                <a href='#work' class='menu__link'> work </a>
+                <a href='#team' class='menu__link'> team </a>
+                <a href='#services' class='menu__link'> services </a>
+                <a href='#features' class='menu__link'> features </a>
+                <a href='#contact' class='menu__link'> contact </a>
             </nav>
         </div>
     </header>
 
 <!-- MAIN -->
     <main>
-        <section id="home" class="home">
-            <h2 class="home__caption"> welcome to our marketplace </h2>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique ndolor non, ornare sagittis dolor. Nulla vestibulu lacus ... </p>
-            <a href="#" class="home__link"> wiev more </a>
-            <a href="#" class="home__link"> video tour </a>
+
+<!-- HOME -->
+        <section id='home' class='home'>
+            <div class='home__container'>
+                <h2 class='home__caption'> welcome to our marketplace </h2>
+                <p class='home__text'> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique ndolor non, ornare sagittis dolor. Nulla vestibulu lacus ... </p>
+                <div>
+                    <a href='#' class='home__link'> wiev more </a>
+                    <a href='#' class='home__link'> video tour </a>
+                </div>
+            </div>
         </section>
 
 <!-- ABOUT -->
-        <section id="about" class="about">
-            <h2 class="about__caption"> we are modest. </h2>
-            <div class="about__mission">
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique ndolor non, ornare sagittis dolor. Nulla vestibulu lacus sed molestie gravida. Crferm entum quismagna congue, vel sodales arcu vestibulum. Nunc lobortis
-                    dui magna, quis lacusullamcorper at. Phasellus sollicitudin ante eros ornare, sit amet luctus lorem semper. Suspendisse posuere, quamdictum consectetur, augue metus pharetra tellus, eu feugiatloreg egetnisi. Cras ornare bibendum
-                    ante, ut bibendum odio convallis eget. vel sodales arcu vestibulum </p>
-                <div class="social">
-                    <a href="#" class="social__link">
-                        <img src="images/006-facebook-logo.svg" alt="facebook">
-                    </a>
-                    <a href="#" class="social__link">
-                        <img src="images/001-twitter-logo-silhouette.svg" alt="twitter">
-                    </a>
-                    <a href="#" class="social__link">
-                        <img src="images/002-github-logo.svg" alt="github">
-                    </a>
-                    <a href="#" class="social__link">
-                        <img src="images/001-dribble-logo.svg" alt="Dribbble">
-                    </a>
-                    <a href="#" class="social__link">
-                        <img src="images/005-behance-logo.svg" alt="behance">
-                    </a>
+        <section id='about' class='about'>
+            <div class='about__container'>
+                <h2 class='about__caption'> we are modest. </h2>
+                <div class='about__content'>
+                    <div class='mission'>
+                        <p class='mission__text'> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique ndolor non, ornare sagittis dolor. Nulla vestibulu lacus sed molestie gravida. Crferm entum quismagna congue, vel sodales arcu vestibulum. Nunc
+                            lobortis dui magna, quis lacusullamcorper at. </p>
+                        <p class='mission__text'> Phasellus sollicitudin ante eros ornare, <span> sit amet luctus lorem semper </span>. Suspendisse posuere, quamdictum consectetur, augue metus pharetra tellus, eu feugiatloreg egetnisi. Cras ornare bibendum ante, ut bibendum odio
+                            convallis eget. vel sodales arcu vestibulum </p>
+                        <div class='social'>
+                            <a href='#' class='social__link'>
+                                <img src='images/006-facebook-logo.svg' alt='facebook'>
+                            </a>
+                            <a href='#' class='social__link'>
+                                <img src='images/001-twitter-logo-silhouette.svg' alt='twitter'>
+                            </a>
+                            <a href='#' class='social__link'>
+                                <img src='images/002-github-logo.svg' alt='github'>
+                            </a>
+                            <a href='#' class='social__link'>
+                                <img src='images/001-dribble-logo.svg' alt='Dribbble'>
+                            </a>
+                            <a href='#' class='social__link'>
+                                <img src='images/005-behance-logo.svg' alt='behance'>
+                            </a>
+                        </div>
+                    </div>
+                    <div class='goals'>
+                        <p class='goals__number'> 01 </p>
+                        <article class='goals__item'>
+                            <h3 class='goals__caption'> Dedication to the customers </h3>
+                            <p> Integer vel lacus non dui ullamcorper venenatis. Aliquam vitae trique nisi, vitae ulamcorper risus. </p>
+                        </article>
+                        <p class='goals__number'> 02 </p>
+                        <article class='goals__item'>
+                            <h3 class='goals__caption'> working closely with our clients </h3>
+                            <p> Sed blandit nisi urna, sed pellentesque enim consectetur vitae. Suspendisse ut vehicula nibh. </p>
+                        </article>
+                        <p class='goals__number'> 03 </p>
+                        <article class='goals__item'>
+                            <h3 class='goals__caption'> increase happiness </h3>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eleifend laoreet euismod. </p>
+                        </article>
+                    </div>
                 </div>
-            </div>
-            <div class="goals">
-                <article class="goals__item">
-                    <h3 class="goals__caption"> Dedication to the customers </h3>
-                    <p> Integer vel lacus non dui ullamcorper venenatis. Aliquam vitae tristique nisi, vitae ullamcorper risus. Nam porttitor blandit ultricies. </p>
-                </article>
-                <article class="goals__item">
-                    <h3 class="goals__caption"> working closely with our clients </h3>
-                    <p> Sed blandit nisi urna, sed pellentesque enim consectetur vitae. Suspendisse ut vehicula nibh. </p>
-                </article>
-                <article class="goals__item">
-                    <h3 class="goals__caption"> increase happiness </h3>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eleifend laoreet euismod. </p>
-                </article>
             </div>
         </section>
 
 <!-- WORK -->
-        <section id="work" class="work">
-            <h2 class="work__caption"> lovely work. </h2>
-            <div class="portfolio">
-                <div class="portfolio__item">
-                    <a href="#" class="portfolio__link">
-                        <img src="images/work1.jpg" class="portfolio__image" alt="work1">
-                        <p> partnership guidlines </p>
-                    </a>
+        <section id='work' class='work'>
+            <div class='work__container'>
+                <h2 class='work__caption'> lovely work. </h2>
+                <div class='portfolio'>
+                    <div class='portfolio__item'>
+                        <img src='images/work1.jpg' class='portfolio__image' alt='work1'>
+                        <a href='#work' class='portfolio__link'>
+                            <span> + </span>
+                            <p> partnership guidlines </p>
+                        </a>
+                    </div>
+                    <div class='portfolio__item'>
+                        <img src='images/work2.jpg' class='portfolio__image' alt='work2'>
+                        <a href='#work' class='portfolio__link'>
+                            <span> + </span>
+                            <p> partnership guidlines </p>
+                        </a>
+                    </div>
+                    <div class='portfolio__item'>
+                        <img src='images/work3.jpg' class='portfolio__image' alt='work3'>
+                        <a href='#work' class='portfolio__link'>
+                            <span> + </span>
+                            <p> partnership guidlines </p>
+                        </a>
+                    </div>
+                    <div class='portfolio__item'>
+                        <img src='images/work4.jpg' class='portfolio__image' alt='work4'>
+                        <a href='#work' class='portfolio__link'>
+                            <span> + </span>
+                            <p> partnership guidlines </p>
+                        </a>
+                    </div>
+                    <div class='portfolio__item'>
+                        <img src='images/work5.jpg' class='portfolio__image' alt='work5'>
+                        <a href='#work' class='portfolio__link'>
+                            <span> + </span>
+                            <p> partnership guidlines </p>
+                        </a>
+                    </div>
+                    <div class='portfolio__item'>
+                        <img src='images/work6.jpg' class='portfolio__image' alt='work6'>
+                        <a href='#work' class='portfolio__link'>
+                            <span> + </span>
+                            <p> partnership guidlines </p>
+                        </a>
+                    </div>
                 </div>
-                <div class="portfolio__item">
-                    <a href="#" class="portfolio__link">
-                        <img src="images/work2.jpg" class="portfolio__image" alt="work2">
-                        <p> partnership guidlines </p>
-                    </a>
-                </div>
-                <div class="portfolio__item">
-                    <a href="#" class="portfolio__link">
-                        <img src="images/work3.jpg" class="portfolio__image" alt="work3">
-                        <p> partnership guidlines </p>
-                    </a>
-                </div>
-                <div class="portfolio__item">
-                    <a href="#" class="portfolio__link">
-                        <img src="images/work4.jpg" class="portfolio__image" alt="work4">
-                        <p> partnership guidlines </p>
-                    </a>
-                </div>
-                <div class="portfolio__item">
-                    <a href="#" class="portfolio__link">
-                        <img src="images/work5.jpg" class="portfolio__image" alt="work5">
-                        <p> partnership guidlines </p>
-                    </a>
-                </div>
-                <div class="portfolio__item">
-                    <a href="#" class="portfolio__link">
-                        <img src="images/work6.jpg" class="portfolio__image" alt="work6">
-                        <p> partnership guidlines </p>
-                    </a>
-                </div>
+                <a href='#' class='work__link'> show me more </a>
             </div>
-            <a href="#" class="work__more-work"> show me more </a>
         </section>
 
 <!-- SERVICES -->
-        <section id="services" class="services">
-            <h2 class="services__caption"> what we do. </h2>
-            <article class="services__item">
-                <img src="images/004-cogs.svg" class="services__icon" alt="service icon">
-                <h3 class="services__service-name"> Easy theme Setup </h3>
-                <p> Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum. </p>
-            </article>
-            <article class="services__item">
-                <img src="images/007-tool.svg" class="services__icon" alt="service icon">
-                <h3 class="services__service-name"> pixel perfect design </h3>
-                <p> Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum. </p>
-            </article>
-            <article class="services__item">
-                <img src="images/003-cell-phone.svg" class="services__icon" alt="service icon">
-                <h3 class="services__service-name"> responsive display </h3>
-                <p> Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum. </p>
-            </article>
-            <article class="services__item">
-                <img src="images/002-schedule-button.svg" class="services__icon" alt="service icon">
-                <h3 class="services__service-name"> 24/7 support </h3>
-                <p> Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum. </p>
-            </article>
+        <section id='services' class='services'>
+            <div class='services__container'>
+                <h2 class='services__caption'> what we do. </h2>
+                <div class='services__content'>
+                    <article class='services__item'>
+                        <img src='images/004-cogs.svg' class='services__icon' alt='service icon'>
+                        <h3 class='services__service-name'> Easy theme Setup </h3>
+                        <p> Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum. </p>
+                    </article>
+                    <article class='services__item'>
+                        <img src='images/007-tool.svg' class='services__icon' alt='service icon'>
+                        <h3 class='services__service-name'> pixel perfect design </h3>
+                        <p> Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum. </p>
+                    </article>
+                    <article class='services__item'>
+                        <img src='images/003-cell-phone.svg' class='services__icon' alt='service icon'>
+                        <h3 class='services__service-name'> responsive display </h3>
+                        <p> Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum. </p>
+                    </article>
+                    <article class='services__item'>
+                        <img src='images/002-schedule-button.svg' class='services__icon' alt='service icon'>
+                        <h3 class='services__service-name'> 24/7 support </h3>
+                        <p> Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum. </p>
+                    </article>
+                    <article class='services__item'>
+                        <img src='images/004-cogs.svg' class='services__icon' alt='service icon'>
+                        <h3 class='services__service-name'> Easy theme Setup </h3>
+                        <p> Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum. </p>
+                    </article>
+                    <article class='services__item'>
+                        <img src='images/007-tool.svg' class='services__icon' alt='service icon'>
+                        <h3 class='services__service-name'> pixel perfect design </h3>
+                        <p> Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum. </p>
+                    </article>
+                    <article class='services__item'>
+                        <img src='images/003-cell-phone.svg' class='services__icon' alt='service icon'>
+                        <h3 class='services__service-name'> responsive display </h3>
+                        <p> Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum. </p>
+                    </article>
+                    <article class='services__item'>
+                        <img src='images/002-schedule-button.svg' class='services__icon' alt='service icon'>
+                        <h3 class='services__service-name'> 24/7 support </h3>
+                        <p> Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum. </p>
+                    </article>
+                </div>
+            </div>
         </section>
 
 <!-- FEATURES -->
-        <section id="features" class="features">
-            <h2 class="features__caption"> features. </h2>
-            <div class="features__item">
-                <img src="images/feat1.jpg" class="features__image" alt="feature image">
-                <h3 class="features__name"> Product Design: Eames Chairs </h3>
-                <p> Eames designs are certainly iconic. Everyone of us know at least two or three of their famous chairs. I would even risk saying that most of us dream about having a nice Eames. </p>
-            </div>
-            <div class="features__item">
-                <img src="images/feat2.jpg" class="features__image" alt="feature image">
-                <h3 class="features__name"> Elegant and Colorful Logos </h3>
-                <p> I’ve always found logo design to be one of the most challenging things to get right. There’s so much that a logo can say about a brand without actually saying it. </p>
-            </div>
-            <div class="features__item">
-                <img src="images/feat3.jpg" class="features__image" alt="feature image">
-                <h3 class="features__name"> A Showcase of Creative </h3>
-                <p> It’s always interesting to see another designer’s take on a famous website, app or even physical product. Different designers add their own personality and style. </p>
+        <section id='features' class='features'>
+            <div class='features__container'>
+                <h2 class='features__caption'> features. </h2>
+                <div class='features__content'>
+                    <div class='features__item'>
+                        <img src='images/feat1.jpg' class='features__image' alt='feature image'>
+                        <h3 class='features__name'> Product Design: Eames Chairs </h3>
+                        <p> Eames designs are certainly iconic. Everyone of us know at least two or three of their famous chairs. I would even risk saying that most of us dream about having a nice Eames. </p>
+                    </div>
+                    <div class='features__item'>
+                        <img src='images/feat2.jpg' class='features__image' alt='feature image'>
+                        <h3 class='features__name'> Elegant and Colorful Logos </h3>
+                        <p> I’ve always found logo design to be one of the most challenging things to get right. There’s so much that a logo can say about a brand without actually saying it. </p>
+                    </div>
+                    <div class='features__item'>
+                        <img src='images/feat3.jpg' class='features__image' alt='feature image'>
+                        <h3 class='features__name'> A Showcase of Creative </h3>
+                        <p> It’s always interesting to see another designer’s take on a famous website, app or even physical product. Different designers add their own personality and style. </p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
 <!-- FOOTER -->
-    <footer class="footer">
-        <p>© Copyright 2014 by PSD Booster. All Rights Reserved.</p>
-        <div class="social social--right">
-            <a href="" class="social__link social__link--small">
-                <img src="images/001-twitter-logo-silhouette.svg" class="footer-social__icon" alt="twitter">
-            </a>
-            <a href="" class="social__link social__link--small">
-                <img src="images/006-facebook-logo.svg" class="footer-social__icon" alt="facebook">
-            </a>
-            <a href="" class="social__link social__link--small">
-                <img src="images/009-skype-logo.svg" class="footer-social__icon" alt="skype">
-            </a>
-            <a href="" class="social__link social__link--small">
-                <img src="images/005-behance-logo.svg" class="footer-social__icon" alt="behance">
-            </a>
-            <a href="" class="social__link social__link--small">
-                <img src="images/008-linkedin-letters.svg" class="footer-social__icon" alt="linked in">
-            </a>
+    <footer class='footer'>
+        <div class='footer__container'>
+            <p>© Copyright 2014 by PSD Booster. All Rights Reserved.</p>
+            <div class='social'>
+                <a href='' class='footer__social-link'>
+                    <img src='images/001-twitter-logo-silhouette.svg' class='footer-social__icon' alt='twitter'>
+                </a>
+                <a href='' class='footer__social-link'>
+                    <img src='images/006-facebook-logo.svg' class='footer-social__icon' alt='facebook'>
+                </a>
+                <a href='' class='footer__social-link'>
+                    <img src='images/009-skype-logo.svg' class='footer-social__icon' alt='skype'>
+                </a>
+                <a href='' class='footer__social-link'>
+                    <img src='images/005-behance-logo.svg' class='footer-social__icon' alt='behance'>
+                </a>
+                <a href='' class='footer__social-link'>
+                    <img src='images/008-linkedin-letters.svg' class='footer-social__icon' alt='linked in'>
+                </a>
+            </div>
         </div>
     </footer>
 
 </body>
+
 </html>

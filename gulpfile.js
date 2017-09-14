@@ -10,11 +10,11 @@ var imageMin = require('gulp-imagemin');
 var cache = require('gulp-cache');
 
 gulp.task('sass', function() {
-    return sass('src/components/main.scss', { sourcemap: true, style: 'compact' })
+    return sass('src/components/*.scss', { sourcemap: true, style: 'compact' })
         .on('error', sass.logError)
         .pipe(sourceMaps.init({loadMaps: true}))
         .pipe(autoPrefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1'))
-        .pipe(rename('app.css'))
+        // .pipe(rename('app.css'))
         .pipe(cleanCSS())
         .pipe(sourceMaps.write())
         .pipe(gulp.dest('dist/css'));
