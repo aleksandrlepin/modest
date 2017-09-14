@@ -4,7 +4,7 @@
 
 .wrapper {
     margin: auto;
-    width: 1900px;
+    max-width: 1900px;
 }
 
 .header {
@@ -108,20 +108,11 @@
 
 .about__caption {
     @include q-sans-400(36);
-    margin: 0 20px 25px;
+    margin: 0 20px 25px 0;
+    padding-left: 10px;
     color: $black2;
     text-transform: uppercase;
-
-    &::before {
-        content: '';
-        display: block;
-        position: relative;
-        top: 38px;
-        left: -20px;
-        width: 1%;
-        height: 36px;
-        background-color: $grey2;
-    }
+    border-left: 10px solid $grey2;
 }
 
 .about__content {
@@ -212,21 +203,11 @@
 
 .work__caption {
     @include q-sans-400(36);
-    margin: 0 20px 55px;
+    margin: 0 20px 55px 0;
+    padding-left: 10px;
     color: $white1;
     text-transform: uppercase;
-
-    &::before {
-        content: '';
-        display: block;
-        position: relative;
-        top: 38px;
-        left: -20px;
-        width: 1%;
-        height: 36px;
-        opacity: .2;
-        background-color: $grey2;
-    }
+    border-left: 10px solid $grey3;
 }
 
 .portfolio {
@@ -312,20 +293,11 @@
 
 .services__caption {
     @include q-sans-400(36);
-    margin: 0 20px;
+    margin: 0 20px 0 0;
+    padding-left: 10px;
     color: $black2;
     text-transform: uppercase;
-
-    &::before {
-        content: '';
-        display: block;
-        position: relative;
-        top: 38px;
-        left: -20px;
-        width: 1%;
-        height: 36px;
-        background-color: $grey2;
-    }
+    border-left: 10px solid $grey2;
 }
 
 .services__content {
@@ -377,21 +349,11 @@
 
 .features__caption {
     @include q-sans-400(36);
-    margin: 0 20px 53px;
+    margin: 0 20px 53px 0;
+    padding-left: 10px;
     color: $white1;
     text-transform: uppercase;
-
-    &::before {
-        content: '';
-        display: block;
-        position: relative;
-        top: 38px;
-        left: -20px;
-        width: 1%;
-        height: 36px;
-        opacity: .2;
-        background-color: $grey2;
-    }
+    border-left: 10px solid $grey3;
 }
 
 .features__content {
