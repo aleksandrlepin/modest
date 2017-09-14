@@ -2,6 +2,11 @@
 @import 'variables';
 @import 'mixins';
 
+.wrapper {
+    margin: auto;
+    width: 1900px;
+}
+
 .header {
     background-color: $dark-slate-grey1;
 }
@@ -47,6 +52,7 @@
     @include o-sans-400(16);
     height: 660px;
     background-image: url('../images/bg1.jpg');
+    background-repeat: no-repeat;
     background-position: center;
     color: $white1;
 }
