@@ -6,18 +6,18 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <meta http-equiv='X-UA-Compatible' content='ie=edge'>
     <title>Modest</title>
+    <!-- <link rel='stylesheet' href='css/reset.css'> -->
     <link rel='stylesheet' href='css/app.css'>
-    <link rel='stylesheet' href='css/reset.css'>
 </head>
 
 <body>
         <!-- HEADER -->
-        <header class='header'>
-            <div class='header__container'>
+        <div class='header'>
+            <header class='header__container'>
                 <a class='header__logo' href="/">
                     <img src='images/modest.png' alt='Modest logo'>
                 </a>
-                <nav class='menu'>
+                <nav class='header__menu inline-reset'>
                     <a class='menu__link menu__link--active' href='#home'> home </a>
                     <a class='menu__link' href='#about'> about </a>
                     <a class='menu__link' href='#work'> work </a>
@@ -26,80 +26,72 @@
                     <a class='menu__link' href='#features'> features </a>
                     <a class='menu__link' href='#contact'> contact </a>
                 </nav>
-            </div>
-        </header>
+            </header>
+        </div>
 
         <!-- MAIN -->
         <main>
 
             <!-- HOME -->
             <section id='home' class='home'>
-                <div class='home__container'>
-                    <h2 class='home__caption'> welcome to our marketplace </h2>
-                    <p class='home__text'> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique ndolor non, ornare sagittis dolor. Nulla vestibulu lacus ... </p>
-                    <a class='home__link' href='#'> view more </a>
-                    <a class='home__link' href='#'> video tour </a>
+                <div class='wrapper home__container'>
+                    <div class="home__inner">
+                        <h2 class='home__caption'> welcome to our marketplace </h2>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique ndolor non, ornare sagittis dolor. Nulla vestibulu lacus ... </p>
+                        <div class="inline-reset">
+                            <button class='btn' href='#'> view more </button>
+                            <button class='btn' href='#'> video tour </button>
+                        </div>
+                    </div>
                 </div>
             </section>
 
             <!-- ABOUT -->
             <section id='about' class='about'>
-                <div class='about__container'>
+                <div class='wrapper about__container'>
                     <h2 class='about__caption'> we are modest. </h2>
                     <div class='about__content'>
                         <div class='about__mission'>
-                            <p class='mission__text'> Lorem ipsum dolor sit amet, lobortis consectetur adipiscing elit. Sed nisi metus, tristique ndolor non, ornare sagittis dolor. Nulla vestibulu lacus sed molestie gravida. Crferm entum quismagna congue, vel sodales arcu vestibulum.
+                            <p> Lorem ipsum dolor sit amet, lobortis consectetur adipiscing elit. Sed nisi metus, tristique ndolor non, ornare sagittis dolor. Nulla vestibulu lacus sed molestie gravida. Crferm entum quismagna congue, vel sodales arcu vestibulum.
                                 Nunc lobortis dui magna, quis lacusullamcorper at. </p>
-                            <p class='mission__text'> Phasellus sollicitudin ante eros ornare, <span> sit amet luctus lorem semper </span>. Suspendisse posuere, quamdictum consectetur, augue metus pharetra tellus, eu feugiatloreg egetnisi. Cras ornare bibendum ante, ut bibendum
+                            <p> Phasellus sollicitudin ante eros ornare, <span> sit amet luctus lorem semper </span>. Suspendisse posuere, quamdictum consectetur, augue metus pharetra tellus, eu feugiatloreg egetnisi. Cras ornare bibendum ante, ut bibendum
                                 odio convallis eget. vel sodalessollicitudin arcu vestibulum </p>
                             <div class='social'>
-                                <a href='#' class='social__link'>
-                                <img src='images/006-facebook-logo.svg' alt='facebook'>
-                            </a>
-                                <a href='#' class='social__link'>
-                                <img src='images/001-twitter-logo-silhouette.svg' alt='twitter'>
-                            </a>
-                                <a href='#' class='social__link'>
-                                <img src='images/002-github-logo.svg' alt='github'>
-                            </a>
-                                <a href='#' class='social__link'>
-                                <img src='images/001-dribble-logo.svg' alt='Dribbble'>
-                            </a>
-                                <a href='#' class='social__link'>
-                                <img src='images/005-behance-logo.svg' alt='behance'>
-                            </a>
+                                <a href='#' class='social__link social__link--big social__icon-fb'></a>
+                                <a href='#' class='social__link social__link--big social__icon-tw'></a>
+                                <a href='#' class='social__link social__link--big social__icon-git'></a>
+                                <a href='#' class='social__link social__link--big social__icon-drb'></a>
+                                <a href='#' class='social__link social__link--big social__icon-behance'></a>
                             </div>
                         </div>
-                        <div class='about__goals'>
-                            <article class='goals__goals-item'>
-                                <span class='goals-item__number'> 01 </span>
-                                <div class="goals-item__content">
+                        <!-- <div class=''> -->
+                            <dl class='about__goals'>
+                                <dt class="goals__num goals__num--1"> Dedication to the customers </dt>
+                                <dd> Integer vel lacus non dui ullamcorper venenatis. Aliquam vitae trique nisi, vitae ulamcorper risus. </dd>
+
+                                <!-- <div class="goals-item__content">
                                     <h3 class='goals-item__caption'> Dedication to the customers </h3>
                                     <p> Integer vel lacus non dui ullamcorper venenatis. Aliquam vitae trique nisi, vitae ulamcorper risus. </p>
-                                </div>
-                            </article>
-                            <article class='goals__goals-item'>
-                                <span class='goals-item__number'> 02 </span>
-                                <div class="goals-item__content">
-                                    <h3 class='goals-item__caption'> working closely with our clients </h3>
-                                    <p> Sed blandit nisi urna, sed pellentesque enim consectetur vitae. Suspendisse ut vehicula nibh. </p>
-                                </div>
-                            </article>
-                            <article class='goals__goals-item'>
-                                <span class='goals-item__number'> 03 </span>
-                                <div class="goals-item__content">
-                                    <h3 class='goals-item__caption'> increase happiness </h3>
-                                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eleifend laoreet euismod. </p>
-                                </div>
-                            </article>
-                        </div>
+                                </div> -->
+                                <!-- <ul class='goals-item__number'> 02 </ul> -->
+                                <!-- <div class="goals-item__content"> -->
+                                    <dt class="goals__num goals__num--2"> working closely with our clients </dt>
+                                    <dd> Sed blandit nisi urna, sed pellentesque enim consectetur vitae. Suspendisse ut vehicula nibh. </dd>
+                                <!-- </div> -->
+                                <!-- <ul class='goals-item__number'> 03 </ul> -->
+                                <!-- <div class="goals-item__content"> -->
+                                    <dt class="goals__num goals__num--3"> increase happiness </dt>
+                                    <dd> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eleifend laoreet euismod. </dd>
+                                <!-- </div> -->
+                            </dl>
+                        <!-- </div> -->
                     </div>
                 </div>
             </section>
 
             <!-- WORK -->
             <section id='work' class='work'>
-                <div class='work__container'>
+                <div class='wrapper work__container'>
                     <h2 class='work__caption'> lovely work. </h2>
                     <div class='portfolio'>
                         <div class='portfolio__item'>
@@ -145,13 +137,13 @@
                         </a>
                         </div>
                     </div>
-                    <a href='#' class='work__link'> show me more </a>
+                    <button href='#' class='work__link btn'> show me more </button>
                 </div>
             </section>
 
             <!-- SERVICES -->
             <section id='services' class='services'>
-                <div class='services__container'>
+                <div class='wrapper services__container'>
                     <h2 class='services__caption'> what we do. </h2>
                     <div class='services__content'>
                         <article class='services__item'>
@@ -200,7 +192,7 @@
 
             <!-- FEATURES -->
             <section id='features' class='features'>
-                <div class='features__container'>
+                <div class='wrapper features__container'>
                     <h2 class='features__caption'> features. </h2>
                     <div class='features__content'>
                         <div class='features__item'>
@@ -225,24 +217,14 @@
 
         <!-- FOOTER -->
         <footer class='footer'>
-            <div class='footer__container'>
+            <div class='wrapper footer__container'>
                 <p>© Copyright 2014 by PSD Booster. All Rights Reserved.</p>
-                <div class='footer__social'>
-                    <a href='' class='footer__social-link'>
-                    <img class='footer-social__icon' src='images/001-twitter-logo-silhouette.svg' alt='twitter'>
-                </a>
-                    <a href='' class='footer__social-link'>
-                    <img class='footer-social__icon' src='images/006-facebook-logo.svg' alt='facebook'>
-                </a>
-                    <a href='' class='footer__social-link'>
-                    <img class='footer-social__icon' src='images/009-skype-logo.svg' alt='skype'>
-                </a>
-                    <a href='' class='footer__social-link'>
-                    <img src='images/005-behance-logo.svg' alt='behance'>
-                </a>
-                    <a href='' class='footer__social-link'>
-                    <img  class='footer-social__icon' src='images/008-linkedin-letters.svg' alt='linked in'>
-                </a>
+                <div class='social'>
+                    <a href='' class='social__link social__icon-tw'></a>
+                    <a href='' class='social__link social__icon-fb'></a>
+                    <a href='' class='social__link social__icon-skype'></a>
+                    <a href='' class='social__link social__icon-behance'></a>
+                    <a href='' class='social__link social__icon-linkedin'></a>
                 </div>
             </div>
         </footer>
