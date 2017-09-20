@@ -6,7 +6,6 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <meta http-equiv='X-UA-Compatible' content='ie=edge'>
     <title>Modest</title>
-    <!-- <link rel='stylesheet' href='css/reset.css'> -->
     <link rel='stylesheet' href='css/app.css'>
 </head>
 
@@ -14,10 +13,10 @@
         <!-- HEADER -->
         <div class='header'>
             <header class='header__container'>
-                <a class='header__logo' href="/">
+                <a href='/'>
                     <img src='images/modest.png' alt='Modest logo'>
                 </a>
-                <nav class='header__menu inline-reset'>
+                <nav class='header__menu'>
                     <a class='menu__link menu__link--active' href='#home'> home </a>
                     <a class='menu__link' href='#about'> about </a>
                     <a class='menu__link' href='#work'> work </a>
@@ -33,23 +32,23 @@
         <main>
 
             <!-- HOME -->
-            <section id='home' class='home'>
+            <section class='home' id='home'>
                 <div class='wrapper home__container'>
-                    <div class="home__inner">
-                        <h2 class='home__caption'> welcome to our marketplace </h2>
+                    <div class='home__inner'>
+                        <h2> welcome to our marketplace </h2>
                         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique ndolor non, ornare sagittis dolor. Nulla vestibulu lacus ... </p>
-                        <div class="inline-reset">
-                            <button class='btn' href='#'> view more </button>
-                            <button class='btn' href='#'> video tour </button>
+                        <div class='inline-reset'>
+                            <button class='btn' type='button' name='button'> view more </button>
+                            <button class='btn' type='button' name='button'> video tour </button>
                         </div>
                     </div>
                 </div>
             </section>
 
             <!-- ABOUT -->
-            <section id='about' class='about'>
-                <div class='wrapper about__container'>
-                    <h2 class='about__caption'> we are modest. </h2>
+            <section class='about' id='about'>
+                <div class='wrapper'>
+                    <h2> we are modest. </h2>
                     <div class='about__content'>
                         <div class='about__mission'>
                             <p> Lorem ipsum dolor sit amet, lobortis consectetur adipiscing elit. Sed nisi metus, tristique ndolor non, ornare sagittis dolor. Nulla vestibulu lacus sed molestie gravida. Crferm entum quismagna congue, vel sodales arcu vestibulum.
@@ -57,132 +56,113 @@
                             <p> Phasellus sollicitudin ante eros ornare, <span> sit amet luctus lorem semper </span>. Suspendisse posuere, quamdictum consectetur, augue metus pharetra tellus, eu feugiatloreg egetnisi. Cras ornare bibendum ante, ut bibendum
                                 odio convallis eget. vel sodalessollicitudin arcu vestibulum </p>
                             <div class='social'>
-                                <a href='#' class='social__link social__link--big social__icon-fb'></a>
-                                <a href='#' class='social__link social__link--big social__icon-tw'></a>
-                                <a href='#' class='social__link social__link--big social__icon-git'></a>
-                                <a href='#' class='social__link social__link--big social__icon-drb'></a>
-                                <a href='#' class='social__link social__link--big social__icon-behance'></a>
+                                <a class='social__link social__link--big social__icon-fb' href='#'></a>
+                                <a class='social__link social__link--big social__icon-tw' href='#'></a>
+                                <a class='social__link social__link--big social__icon-git' href='#'></a>
+                                <a class='social__link social__link--big social__icon-drb' href='#'></a>
+                                <a class='social__link social__link--big social__icon-behance' href='#'></a>
                             </div>
                         </div>
-                        <!-- <div class=''> -->
-                            <dl class='about__goals'>
-                                <dt class="goals__num goals__num--1"> Dedication to the customers </dt>
-                                <dd> Integer vel lacus non dui ullamcorper venenatis. Aliquam vitae trique nisi, vitae ulamcorper risus. </dd>
-
-                                <!-- <div class="goals-item__content">
-                                    <h3 class='goals-item__caption'> Dedication to the customers </h3>
-                                    <p> Integer vel lacus non dui ullamcorper venenatis. Aliquam vitae trique nisi, vitae ulamcorper risus. </p>
-                                </div> -->
-                                <!-- <ul class='goals-item__number'> 02 </ul> -->
-                                <!-- <div class="goals-item__content"> -->
-                                    <dt class="goals__num goals__num--2"> working closely with our clients </dt>
-                                    <dd> Sed blandit nisi urna, sed pellentesque enim consectetur vitae. Suspendisse ut vehicula nibh. </dd>
-                                <!-- </div> -->
-                                <!-- <ul class='goals-item__number'> 03 </ul> -->
-                                <!-- <div class="goals-item__content"> -->
-                                    <dt class="goals__num goals__num--3"> increase happiness </dt>
-                                    <dd> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eleifend laoreet euismod. </dd>
-                                <!-- </div> -->
-                            </dl>
-                        <!-- </div> -->
+                        <dl class='about__goals'>
+                            <dt class='goals__num goals__num--1'> Dedication to the customers </dt>
+                            <dd> Integer vel lacus non dui ullamcorper venenatis. Aliquam vitae trique nisi, vitae ulamcorper risus. </dd>
+                            <dt class='goals__num goals__num--2'> working closely with our clients </dt>
+                            <dd> Sed blandit nisi urna, sed pellentesque enim consectetur vitae. Suspendisse ut vehicula nibh. </dd>
+                            <dt class='goals__num goals__num--3'> increase happiness </dt>
+                            <dd> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eleifend laoreet euismod. </dd>
+                        </dl>
                     </div>
                 </div>
             </section>
 
             <!-- WORK -->
-            <section id='work' class='work'>
-                <div class='wrapper work__container'>
-                    <h2 class='work__caption'> lovely work. </h2>
+            <section class='work' id='work'>
+                <div class='wrapper'>
+                    <h2> lovely work. </h2>
                     <div class='portfolio'>
                         <div class='portfolio__item'>
-                            <img src='images/work1.jpg' class='portfolio__image' alt='work1'>
-                            <a href='#work' class='portfolio__link'>
+                            <img class='portfolio__image' src='images/work1.jpg' alt='work1'>
+                            <a class='portfolio__link' href='#work'>
                             <span> + </span>
                             <p> partnership guidlines </p>
                         </a>
                         </div>
                         <div class='portfolio__item'>
-                            <img src='images/work2.jpg' class='portfolio__image' alt='work2'>
-                            <a href='#work' class='portfolio__link'>
+                            <img class='portfolio__image' src='images/work2.jpg' alt='work2'>
+                            <a class='portfolio__link' href='#work'>
                             <span> + </span>
                             <p> partnership guidlines </p>
                         </a>
                         </div>
                         <div class='portfolio__item'>
-                            <img src='images/work3.jpg' class='portfolio__image' alt='work3'>
-                            <a href='#work' class='portfolio__link'>
+                            <img class='portfolio__image' src='images/work3.jpg' alt='work3'>
+                            <a class='portfolio__link' href='#work'>
                             <span> + </span>
                             <p> partnership guidlines </p>
                         </a>
                         </div>
                         <div class='portfolio__item'>
-                            <img src='images/work4.jpg' class='portfolio__image' alt='work4'>
-                            <a href='#work' class='portfolio__link'>
+                            <img class='portfolio__image' src='images/work4.jpg' alt='work4'>
+                            <a class='portfolio__link' href='#work'>
                             <span> + </span>
                             <p> partnership guidlines </p>
                         </a>
                         </div>
                         <div class='portfolio__item'>
-                            <img src='images/work5.jpg' class='portfolio__image' alt='work5'>
-                            <a href='#work' class='portfolio__link'>
+                            <img class='portfolio__image' src='images/work5.jpg' alt='work5'>
+                            <a class='portfolio__link' href='#work'>
                             <span> + </span>
                             <p> partnership guidlines </p>
                         </a>
                         </div>
                         <div class='portfolio__item'>
-                            <img src='images/work6.jpg' class='portfolio__image' alt='work6'>
-                            <a href='#work' class='portfolio__link'>
+                            <img class='portfolio__image' src='images/work6.jpg' alt='work6'>
+                            <a class='portfolio__link' href='#work'>
                             <span> + </span>
                             <p> partnership guidlines </p>
                         </a>
                         </div>
                     </div>
-                    <button href='#' class='work__link btn'> show me more </button>
+                    <div class='work__inner'>
+                        <button class='btn' type='button' name='button'> show me more </button>
+                    </div>
                 </div>
             </section>
 
             <!-- SERVICES -->
-            <section id='services' class='services'>
-                <div class='wrapper services__container'>
-                    <h2 class='services__caption'> what we do. </h2>
+            <section class='services' id='services'>
+                <div class='wrapper'>
+                    <h2> what we do. </h2>
                     <div class='services__content'>
-                        <article class='services__item'>
-                            <img class='services__icon' src='images/004-cogs.svg' alt='service icon'>
+                        <article class='services__item services__icon-cogs'>
                             <h3 class='services__service-name'> Easy theme Setup </h3>
                             <p> Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum. </p>
                         </article>
-                        <article class='services__item'>
-                            <img class='services__icon' src='images/007-tool.svg' alt='service icon'>
+                        <article class='services__item services__icon-tools'>
                             <h3 class='services__service-name'> pixel perfect design </h3>
                             <p> Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum. </p>
                         </article>
-                        <article class='services__item'>
-                            <img class='services__icon' src='images/003-cell-phone.svg' alt='service icon'>
+                        <article class='services__item services__icon-phone'>
                             <h3 class='services__service-name'> responsive display </h3>
                             <p> Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum. </p>
                         </article>
-                        <article class='services__item'>
-                            <img class='services__icon' src='images/002-schedule-button.svg' alt='service icon'>
+                        <article class='services__item services__icon-clock'>
                             <h3 class='services__service-name'> 24/7 support </h3>
                             <p> Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum. </p>
                         </article>
-                        <article class='services__item'>
-                            <img class='services__icon' src='images/004-cogs.svg' alt='service icon'>
+                        <article class='services__item services__icon-cogs'>
                             <h3 class='services__service-name'> Easy theme Setup </h3>
                             <p> Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum. </p>
                         </article>
-                        <article class='services__item'>
-                            <img class='services__icon' src='images/007-tool.svg' alt='service icon'>
+                        <article class='services__item services__icon-tools'>
                             <h3 class='services__service-name'> pixel perfect design </h3>
                             <p> Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum. </p>
                         </article>
-                        <article class='services__item'>
-                            <img class='services__icon' src='images/003-cell-phone.svg' alt='service icon'>
+                        <article class='services__item services__icon-phone'>
                             <h3 class='services__service-name'> responsive display </h3>
                             <p> Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum. </p>
                         </article>
-                        <article class='services__item'>
-                            <img class='services__icon' src='images/002-schedule-button.svg' alt='service icon'>
+                        <article class='services__item services__icon-clock'>
                             <h3 class='services__service-name'> 24/7 support </h3>
                             <p> Nunc mattis lorem in leo lobortis, ut venenatis justo commodo. Maecenas a justo nec velit egestas fermentum. </p>
                         </article>
@@ -191,23 +171,23 @@
             </section>
 
             <!-- FEATURES -->
-            <section id='features' class='features'>
+            <section class='features' id='features'>
                 <div class='wrapper features__container'>
                     <h2 class='features__caption'> features. </h2>
                     <div class='features__content'>
                         <div class='features__item'>
-                            <img  class='features__image' src='images/feat1.jpg' alt='feature image'>
-                            <h3 class='features__name'> Product Design: Eames Chairs </h3>
+                            <img src='images/feat1.jpg' alt='feature image'>
+                            <h3> Product Design: Eames Chairs </h3>
                             <p> Eames designs are certainly iconic. Everyone of us know at least two or three of their famous chairs. I would even risk saying that most of us dream about having a nice Eames. </p>
                         </div>
                         <div class='features__item'>
-                            <img  class='features__image' src='images/feat2.jpg' alt='feature image'>
-                            <h3 class='features__name'> Elegant and Colorful Logos </h3>
+                            <img src='images/feat2.jpg' alt='feature image'>
+                            <h3> Elegant and Colorful Logos </h3>
                             <p> I’ve always found logo design to be one of the most challenging things to get right. There’s so much that a logo can say about a brand without actually saying it. </p>
                         </div>
                         <div class='features__item'>
-                            <img  class='features__image' src='images/feat3.jpg' alt='feature image'>
-                            <h3 class='features__name'> A Showcase of Creative </h3>
+                            <img src='images/feat3.jpg' alt='feature image'>
+                            <h3> A Showcase of Creative </h3>
                             <p> It’s always interesting to see another designer’s take on a famous website, app or even physical product. Different designers add their own personality and style. </p>
                         </div>
                     </div>
