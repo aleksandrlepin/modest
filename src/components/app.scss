@@ -9,22 +9,30 @@
     margin-top: 0;
 }
 
+button {
+    outline: 0;
+}
+
 //GLOBAL STYLES
 
+html {
+    @include o-sans-400(16, 26);
+    color: $grey;
+}
+
 body {
-    padding-top: px(80);
+    padding-top: 80px;
 }
 
 .wrapper  {
-    max-width: px(1140);
+    max-width: 1140px;
     margin: 0 auto;
-    padding: px(100) px(20);
+    padding: 100px 20px;
 }
 
 h2 {
     @include q-sans-400(36, 39);
-    margin-top: 0;
-    margin-bottom: px(63);
+    margin-bottom: 63px;
     padding-left: 15px;
     border-left: 10px solid $grey2;
     color: $black2;
@@ -34,24 +42,22 @@ h2 {
 
 h3 {
     @include q-sans-400(16, 19);
-    margin-bottom: px(16);
+    margin-bottom: 16px;
     color: $black2;
     text-transform: uppercase;
 }
 
 p {
-    @include o-sans-400(16, 26);
-    margin-bottom: px(35);
-    color: $grey;
+    margin-bottom: 35px;
 }
 
 .btn {
     @include q-sans-400(14, 17);
     display: inline-block;
-    margin-left: px(11);
-    padding: px(12) px(20);
-    border: px(2) solid $white1;
-    border-radius: px(5);
+    margin-left: 11px;
+    padding: 12px 20px;
+    border: 2px solid $white1;
+    border-radius: 5px;
     background-color: $transparent;
     color: $white1;
     text-decoration: none;
@@ -76,8 +82,8 @@ p {
 
 .social__link {
     display: block;
-    margin-left: px(17);
-    padding: px(9);
+    margin-left: 17px;
+    padding: 9px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 100%;
@@ -87,8 +93,8 @@ p {
     }
 
     &--big {
-        margin: 0 px(2) 0 0;
-        padding: px(30);
+        margin: 0 2px 0 0;
+        padding: 30px;
         background-color: $grey1;
         background-size: 35%;
 
@@ -140,9 +146,9 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: px(1140);
+    max-width: 1140px;
     margin: 0 auto;
-    padding: px(25) px(20);
+    padding: 25px 20px;
 
     img {
         vertical-align: top;
@@ -155,10 +161,10 @@ p {
 
 .menu__link {
     @include o-sans-400(14, 17);
-    margin-left: px(16);
-    padding: px(5) px(9);
-    border: px(2) solid $transparent;
-    border-radius: px(4);
+    margin-left: 16px;
+    padding: 5px 9px;
+    border: 2px solid $transparent;
+    border-radius: 4px;
     color: $white2;
     text-decoration: none;
     text-transform: uppercase;
@@ -193,11 +199,11 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: px(435);
+    min-height: 435px;
     color: $white1;
 
     h2 {
-        margin-bottom: px(22);
+        margin-bottom: 22px;
         padding-left: 0;
         color: $white1;
         border: 0;
@@ -209,7 +215,7 @@ p {
 }
 
 .home__inner {
-    max-width: px(650);
+    max-width: 60%;
 }
 
 .home__btn-holder {
@@ -229,19 +235,19 @@ p {
 
 .about__mission {
     width: 62%;
-    padding-right: px(30);
+    padding-right: 30px;
 }
 
 .about__goals {
     width: 38%;
-    padding-left: px(90);
+    padding-left: 90px;
     margin-bottom: 0;
     counter-reset: goalsCounter;
 
 }
 
 .goals__item {
-    margin-bottom: px(30);
+    margin-bottom: 30px;
     list-style: none;
 
     p:last-child {
@@ -249,7 +255,7 @@ p {
     }
 
     h2 {
-        margin-bottom: px(30);
+        margin-bottom: 30px;
     }
 
     &:last-child {
@@ -267,9 +273,9 @@ p {
     counter-increment: goalsCounter;
     display: block;
     position: absolute;
-    top: px(2);
-    left: px(-70);
-    padding: px(13);
+    top: 2px;
+    left: -70px;
+    padding: 13px;
     background-color: $turquoise;
     color: $white1;
 }
@@ -290,19 +296,17 @@ p {
     display: flex;
     flex-flow: wrap row;
     justify-content: space-between;
-    margin: 0 -1% px(57);
-    overflow: hidden;
+    margin-bottom: 57px;
 }
 
 .portfolio__item {
-    margin-bottom: px(27);
-    width: 33.33%;
-    padding: 0 1%;
+    display: block;
+    position: relative;
+    height: 100%;
+    text-decoration: none;
+    margin-bottom: 3%;
+    width: 32%;
     box-sizing: border-box;
-
-    &:nth-last-child(-n+3) {
-        margin-bottom: 0;
-    }
 
     img {
         width: 100%;
@@ -310,18 +314,6 @@ p {
         vertical-align: top;
     }
 
-    &:hover img {
-        opacity: .5;
-    }
-}
-
-
-.portfolio__link {
-    display: block;
-    position: relative;
-    bottom: 100%;
-    height: 100%;
-    text-decoration: none;
 
     span {
         @include q-sans-400(50, 53);
@@ -338,19 +330,28 @@ p {
         bottom: 0;
         box-sizing: border-box;
         width: 100%;
-        padding: 6%;
+        padding: 20px;
         margin-bottom: 0;
         opacity: 0;
         background-color: $dark-slate-grey3;
         color: $white1;
         text-transform: uppercase;
     }
+
+    &:hover p,
+    &:hover span {
+        opacity: 1;
+    }
+
+    &:hover img {
+        opacity: .5;
+    }
+
+    &:nth-last-child(-n+3) {
+        margin-bottom: 0;
+    }
 }
 
-.portfolio__link:hover p,
-.portfolio__link:hover span {
-    opacity: 1;
-}
 
 .work__inner {
     text-align: center;
@@ -366,14 +367,14 @@ p {
     flex-flow: wrap row;
     justify-content: space-between;
     text-align: center;
-    margin: 0 px(-15);
+    margin: 0 -15px;
 }
 
 .services__item {
     box-sizing: border-box;
     width: 25%;
-    margin-bottom: px(72);
-    padding: px(102) px(15) 0;
+    margin-bottom: 72px;
+    padding: 102px 15px 0;
     background: no-repeat 50% 12%/17%;
 
     &:nth-last-child(-n+4) {
@@ -431,7 +432,7 @@ p {
 
     img {
         width: 100%;
-        margin-bottom: px(52);
+        margin-bottom: 52px;
         vertical-align: top;
     }
 
@@ -450,8 +451,8 @@ p {
 .footer__container {
     display: flex;
     justify-content: space-between;
-    padding-top: px(35);
-    padding-bottom: px(35);
+    padding-top: 35px;
+    padding-bottom: 35px;
 
     p {
         margin: 0;
