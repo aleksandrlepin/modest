@@ -6,20 +6,19 @@
 // RESET STYLES
 
 * {
-    margin: 0;
+    margin-top: 0;
 }
 
 //GLOBAL STYLES
+
+body {
+    padding-top: px(80);
+}
 
 .wrapper  {
     max-width: px(1140);
     margin: 0 auto;
     padding: px(100) px(20);
-}
-
-.inline-reset {
-    font-size: 0;
-    line-height: 0;
 }
 
 h2 {
@@ -33,23 +32,17 @@ h2 {
 
 }
 
-h3,
-dt {
+h3 {
     @include q-sans-400(16, 19);
     margin-bottom: px(16);
     color: $black2;
     text-transform: uppercase;
 }
 
-p,
-dd {
+p {
     @include o-sans-400(16, 26);
-    margin: 0;
+    margin-bottom: px(35);
     color: $grey;
-}
-
-img {
-    vertical-align: top;
 }
 
 .btn {
@@ -150,6 +143,10 @@ img {
     max-width: px(1140);
     margin: 0 auto;
     padding: px(25) px(20);
+
+    img {
+        vertical-align: top;
+    }
 }
 
 .header__menu {
@@ -196,7 +193,6 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: px(80);
     min-height: px(435);
     color: $white1;
 
@@ -208,13 +204,17 @@ img {
     }
 
     p {
-        margin-bottom: px(35);
         color: $white2;
     }
 }
 
 .home__inner {
     max-width: px(650);
+}
+
+.home__btn-holder {
+    font-size: 0;
+    line-height: 0;
 }
 
 // ABOUT
@@ -225,10 +225,6 @@ img {
 
 .about__content {
     display: flex;
-
-    p {
-        margin-bottom: px(50);
-    }
 }
 
 .about__mission {
@@ -240,13 +236,24 @@ img {
     width: 38%;
     padding-left: px(90);
     margin-bottom: 0;
+    counter-reset: goalsCounter;
 
-    dd {
+}
+
+.goals__item {
+    margin-bottom: px(30);
+    list-style: none;
+
+    p:last-child {
+        margin-bottom: 0;
+    }
+
+    h2 {
         margin-bottom: px(30);
+    }
 
-        &:last-child {
-            margin-bottom: 0;
-        }
+    &:last-child {
+        margin-bottom: 0;
     }
 }
 
@@ -256,7 +263,8 @@ img {
 
 .goals__num::before {
     @include q-sans-400(20, 23);
-    content: '';
+    content: '0'counter(goalsCounter);
+    counter-increment: goalsCounter;
     display: block;
     position: absolute;
     top: px(2);
@@ -264,26 +272,6 @@ img {
     padding: px(13);
     background-color: $turquoise;
     color: $white1;
-}
-
-.goals__num--1::before {
-    content: '01';
-}
-
-.goals__num--2::before {
-    content: '02';
-}
-
-.goals__num--3::before {
-    content: '03';
-}
-
-.goals__goals-item {
-    margin-bottom: 30px;
-
-    &:last-child {
-        margin-bottom: 0;
-    }
 }
 
 // WORK
@@ -303,6 +291,7 @@ img {
     flex-flow: wrap row;
     justify-content: space-between;
     margin: 0 -1% px(57);
+    overflow: hidden;
 }
 
 .portfolio__item {
@@ -317,6 +306,8 @@ img {
 
     img {
         width: 100%;
+        height: 100%;
+        vertical-align: top;
     }
 
     &:hover img {
@@ -348,6 +339,7 @@ img {
         box-sizing: border-box;
         width: 100%;
         padding: 6%;
+        margin-bottom: 0;
         opacity: 0;
         background-color: $dark-slate-grey3;
         color: $white1;
@@ -385,6 +377,10 @@ img {
     background: no-repeat 50% 12%/17%;
 
     &:nth-last-child(-n+4) {
+        margin-bottom: 0;
+    }
+
+    p:last-child {
         margin-bottom: 0;
     }
 }
@@ -425,6 +421,7 @@ img {
     flex-flow: wrap row;
     justify-content: space-between;
     margin: 0 -1.3%;
+    overflow: hidden;
 }
 
 .features__item {
@@ -435,6 +432,11 @@ img {
     img {
         width: 100%;
         margin-bottom: px(52);
+        vertical-align: top;
+    }
+
+    p:last-child {
+        margin-bottom: 0;
     }
 }
 
