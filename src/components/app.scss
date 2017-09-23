@@ -245,49 +245,55 @@ p {
     @media (max-width: 768px) {
         width: 100%;
         margin-bottom: 35px;
+        padding-right: 0;
     }
 }
 
 .about__goals {
     width: 38%;
     margin-bottom: 0;
-    padding-left: 70px;
     counter-reset: goalsCounter;
     box-sizing: border-box;
 
+    ul {
+        margin-bottom: 0;
+        padding-left: 0;
+    }
+
+    li {
+        position: relative;
+        margin-bottom: 30px;
+        padding-left: 70px;
+        list-style: none;
+
+        h2 {
+            margin-bottom: 30px;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &::before {
+            @include q-sans-400(20, 23);
+            content: '0'counter(goalsCounter);
+            counter-increment: goalsCounter;
+            display: block;
+            position: absolute;
+            top: 2px;
+            left: 0;
+            padding: 13px;
+            background-color: $turquoise;
+            color: $white1;
+        }
+    }
+
     @media (max-width: 768px) {
         width: 100%;
-    }
-}
-
-.goals__item {
-    position: relative;
-    margin-bottom: 30px;
-    list-style: none;
-
-    h2 {
-        margin-bottom: 30px;
-    }
-
-    p:last-child {
-        margin-bottom: 0;
-    }
-
-    &:last-child {
-        margin-bottom: 0;
-    }
-
-    &::before {
-        @include q-sans-400(20, 23);
-        content: '0'counter(goalsCounter);
-        counter-increment: goalsCounter;
-        display: block;
-        position: absolute;
-        top: 2px;
-        left: -70px;
-        padding: 13px;
-        background-color: $turquoise;
-        color: $white1;
     }
 }
 
