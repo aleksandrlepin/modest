@@ -30,10 +30,16 @@ body {
     padding-top: 80px;
 }
 
-.wrapper  {
+.container  {
     max-width: 1140px;
     margin: 0 auto;
     padding: 100px 20px;
+}
+
+h1 {
+    @include q-sans-400(36, 39);
+    margin-bottom: 22px;
+    text-transform: uppercase;
 }
 
 h2 {
@@ -87,7 +93,6 @@ p {
 }
 
 .social__link {
-    display: block;
     margin-left: 17px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -180,9 +185,9 @@ p {
 }
 
 
-// HOME
+// PROMO-SECTION
 
-.home {
+.promo-section {
     @include o-sans-400(16, 19);
     background-image: url('../images/bg1.jpg');
     background-repeat: no-repeat;
@@ -191,19 +196,11 @@ p {
     color: $white1;
 }
 
-.home__container {
+.promo-section__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     min-height: 435px;
-    color: $white1;
-
-    h2 {
-        margin-bottom: 22px;
-        padding-left: 0;
-        color: $white1;
-        border: 0;
-    }
 
     p {
         color: $white2;
@@ -214,7 +211,7 @@ p {
     }
 }
 
-.home__inner {
+.promo-section__holder {
     max-width: 60%;
 
     @media (max-width: 768px) {
@@ -222,7 +219,7 @@ p {
     }
 }
 
-.home__btn-holder {
+.promo-section__btn-holder {
     font-size: 0;
     line-height: 0;
 }
@@ -386,7 +383,7 @@ p {
 }
 
 
-.work__inner {
+.work__holder {
     text-align: center;
 }
 
