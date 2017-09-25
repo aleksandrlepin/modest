@@ -6,25 +6,38 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <meta http-equiv='X-UA-Compatible' content='ie=edge'>
     <title>Modest</title>
+    <link rel="stylesheet" href='css/burger.css'>
     <link rel='stylesheet' href='css/app.css'>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" defer></script>
+    <script type="text/javascript">
+        window.jQuery || document.write('<script src="js/jquery-1.12.4.min.js"><\/script>')
+    </script>
+    <script type="text/javascript" src="js/jquery.main.js" defer></script>
 </head>
 
 <body id='promo-section'>
     <!-- HEADER -->
-    <div class='header'>
+    <div class='header' id="nav">
         <header class='header__container'>
             <a href='#'>
                     <img src='images/modest.png' alt='Modest logo'>
                 </a>
-            <nav class='header__menu'>
-                <a class='menu__link menu__link--active' href='#promo-section'> home </a>
-                <a class='menu__link' href='#about'> about </a>
-                <a class='menu__link' href='#work'> work </a>
-                <a class='menu__link' href='#team'> team </a>
-                <a class='menu__link' href='#services'> services </a>
-                <a class='menu__link' href='#features'> features </a>
-                <a class='menu__link' href='#contact'> contact </a>
-            </nav>
+            <div class="nav-holder">
+                <nav class='header__menu'>
+                    <a class="nav-opener" href="#"><span>Menu</span></a>
+                    <div class="drop">
+                        <ul>
+                            <li><a class='menu__link menu__link--active' href='#promo-section'> home </a></li>
+                            <li><a class='menu__link' href='#about'> about </a></li>
+                            <li><a class='menu__link' href='#work'> work </a></li>
+                            <li><a class='menu__link' href='#team'> team </a></li>
+                            <li><a class='menu__link' href='#services'> services </a></li>
+                            <li><a class='menu__link' href='#features'> features </a></li>
+                            <li><a class='menu__link' href='#contact'> contact </a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </header>
     </div>
 

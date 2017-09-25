@@ -1,0 +1,128 @@
+
+.nav-holder{
+    position: relative;
+    padding: 0 0px;
+}
+.nav-holder:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+#nav .drop {
+    overflow: hidden;
+    position: absolute;
+    top: 30px;
+    right: -5px;
+    z-index: 999;
+    max-height: 0;
+    padding: 0 10px;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    background: #1d2126;
+    border-radius: 5px;
+}
+
+.nav-active #nav .drop {
+    max-height: 1000px;
+    padding: 10px;
+}
+
+#nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@media (max-width: 768px) {
+    #nav ul li {
+        padding: 3px 0;
+        margin: 0;
+    }
+}
+
+#nav ul li a {
+    display: block;
+}
+
+.nav-opener {
+    float: right;
+    width: 31px;
+    height: 31px;
+    position: relative;
+    text-indent: -9999px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.nav-opener:before,
+.nav-opener:after,
+.nav-opener span {
+    background: #fff;
+    border-radius: 4px;
+    position: absolute;
+    top: 16px;
+    left: 25%;
+    right: 25%;
+    height: 3px;
+    margin-top: -2px;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+.nav-opener:before,
+.nav-opener:after {
+    content: "";
+    top: 10px;
+}
+
+.nav-opener:after {
+    top: 22px;
+}
+
+.nav-active .nav-opener span {
+    display: none;
+}
+
+.nav-active .nav-opener:after,
+.nav-active .nav-opener:before {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 16px;
+    left: 15%;
+    right: 15%;
+}
+
+.nav-active .nav-opener:after {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+@media (min-width: 769px) {
+    #nav .drop {
+        position: static;
+        max-height: none;
+    }
+
+    #nav ul {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+    }
+
+    .nav-opener {
+        display: none;
+    }
+}
