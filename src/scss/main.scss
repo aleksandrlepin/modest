@@ -108,6 +108,7 @@ p {
     &:hover {
         border-color: $turquoise;
         background-color: $turquoise;
+        transition: all .25s ease-out;
     }
 
     &:first-of-type {
@@ -152,6 +153,7 @@ p {
         &:hover {
             background-color: $grey2;
         }
+        
         @media (max-width: 768px) {
             padding: 15px;
         }
@@ -208,6 +210,7 @@ p {
 
     &:hover {
         border-color: $white2;
+        transition: all .3s ease-out;
     }
 
     &.active {

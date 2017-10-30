@@ -1,15 +1,14 @@
 'use strict';
-// $('.menu__link').click(function () {
-//     $('.menu__link.active').removeClass('active');
-//     $(this).addClass('active')
-// })
 
-let menuLink = document.querySelectorAll('.menu__link');
-menuLink.forEach(function (item, i, menuLink){
-    item.addEventListener('click', rmAddActive);
-});
+let headerMenu = document.querySelector('.header__menu ul');
+headerMenu.addEventListener('click', setActive);
 
-function rmAddActive () {
-    document.querySelector('.menu__link.active').classList.remove('active');
-    this.classList.add('active');
+function setActive(event) {
+    event = event || window.event;
+
+    if (event.target.tagName === 'A') {
+        let currentActive =  document.querySelector('.menu__link.active');
+        currentActive.classList.remove('active');
+        event.target.classList.add('active');
+    };
 };
