@@ -8,6 +8,7 @@ var sourceMaps = require('gulp-sourcemaps');
 var server = require('gulp-server-livereload');
 var imageMin = require('gulp-imagemin');
 var cache = require('gulp-cache');
+var ghPages = require('gulp-gh-pages');
 
 gulp.task('sass', function() {
     return sass('src/scss/*.scss', { sourcemap: true, style: 'compact' })
@@ -55,6 +56,11 @@ gulp.task('webserver', function() {
             log: 'info',
             defaultFile: 'index.html'
         }));
+});
+
+gulp.task('deploy', function () {
+    return gulp.src('./dist/**/*')
+        .pipe(ghPages());
 });
 
 gulp.task('default', function() {
